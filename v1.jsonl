@@ -1,9 +1,0 @@
-{"id": "q_008fdebb6ec9", "type": "string", "answer": "Trà đào cam sả (M)"}
-{"id": "q_009187cd2960", "type": "unanswerable", "reason": "Không thể tính toán do thiếu dữ liệu"}
-{"id": "q_00bf8df3ea0b", "type": "number", "answer": 1692992}
-{"id": "q_00c4e24fa228", "type": "unanswerable", "reason": "Không thể tính toán do thiếu dữ liệu"}
-{"id": "q_013b4ff35811", "type": "number", "answer": 7116405.3}
-{"id": "q_014cdcc1da6e", "type": "unanswerable", "reason": "Không có giao dịch ca chiều (12h-18h) ngày 26/8/2026"}
-{"id": "q_01ac0fc9f2a2", "type": "number", "answer": 70879}
-{"id": "q_01ba91ff94c6", "type": "list", "answer": ["{'Tên hàng': 'Lẩu Thái tôm cá (nhỏ)', 'Số lượng': 138.0}", "{'Tên hàng': 'Canh chua cá lóc', 'Số lượng': 119.0}", "{'Tên hàng': 'Bia Tiger lon', 'Số lượng': 108.0}", "{'Tên hàng': 'Rau muống xào tỏi', 'Số lượng': 105.0}", "{'Tên hàng': 'Phí phục vụ', 'Số lượng': 100.0}"]}
-{"id": "q_01d1099489a0", "type": "percent", "answer": -13.04}
