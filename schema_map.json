@@ -1,0 +1,5187 @@
+{
+  "biz_101": {
+    "schema": {
+      "ban_hang": [
+        "Giá bán",
+        "Kết quả",
+        "Nội dung",
+        "Ngày tháng",
+        "Đơn vị (tính)",
+        "so_luong",
+        "Thanh tien",
+        "Quy ra ĐV lẻ",
+        "Mã hóa đơn",
+        "Đối tác"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "ban_hang",
+        "date_col": "Ngày tháng",
+        "money_col": "Thanh tien",
+        "status_col": "Kết quả",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "ban_hang",
+        "date_col": "Ngày tháng",
+        "money_col": "Thanh tien"
+      },
+      "inventory": {
+        "file": "biz_101/inventory.json",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng"
+      },
+      "product": {
+        "file": "biz_101/product.json",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "SKU",
+        "price_col": "Giá"
+      },
+      "customer": {
+        "file": "biz_101/customer.json",
+        "name_col": "Tên khách hàng",
+        "id_col": "ID"
+      },
+      "order_detail": {
+        "file": "biz_101/order_detail.json",
+        "order_id_col": "ID đơn hàng",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng",
+        "money_col": "Giá"
+      }
+    }
+  },
+  "biz_102": {
+    "schema": {
+      "DanhSachQuyDoi": [
+        "Tên sản phẩm",
+        "Đơn vị quy đổi",
+        "Tỉ lệ quy đổi",
+        "Đơn vị cơ bản"
+      ],
+      "DonHang_ChiTiet_T01_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T02_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T03_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T04_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T05_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T06_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T07_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T08_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T09_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T10_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T11_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T12_2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T01_2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T02_2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T03_2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T04_2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T05_2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_T06_2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "DonHang_ChiTiet_T01_2025",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền",
+        "status_col": "Trạng thái đơn hàng",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "DonHang_ChiTiet_T01_2025",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền"
+      },
+      "inventory": {
+        "file": "DonHang_ChiTiet_T01_2025",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng sản phẩm"
+      },
+      "product": {
+        "file": "DonHang_ChiTiet_T01_2025",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "Tên sản phẩm",
+        "price_col": "Giá sản phẩm"
+      },
+      "customer": {
+        "file": "DonHang_ChiTiet_T01_2025",
+        "name_col": "Tên khách hàng",
+        "id_col": "Tên khách hàng"
+      },
+      "order_detail": {
+        "file": "DonHang_ChiTiet_T01_2025",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng sản phẩm",
+        "money_col": "Tổng tiền"
+      }
+    }
+  },
+  "biz_103": {
+    "schema": {
+      "DanhSachQuyDoi": [
+        "Tên sản phẩm",
+        "Đơn vị quy đổi",
+        "Tỉ lệ quy đổi",
+        "Đơn vị cơ bản"
+      ],
+      "DonHang_ChiTiet_04.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_05.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_06.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_07.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_08.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_09.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_10.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_11.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_12.2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_01.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_02.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_03.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_04.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_05.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_06.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_07.2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "DonHang_ChiTiet_04.2025",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền",
+        "status_col": "Trạng thái đơn hàng",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "DonHang_ChiTiet_04.2025",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền"
+      },
+      "inventory": {
+        "file": "DonHang_ChiTiet_04.2025",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng sản phẩm"
+      },
+      "product": {
+        "file": "DanhSachQuyDoi",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "Tên sản phẩm",
+        "price_col": "Giá sản phẩm"
+      },
+      "customer": {
+        "file": "DonHang_ChiTiet_04.2025",
+        "name_col": "Tên khách hàng",
+        "id_col": "Tên khách hàng"
+      },
+      "order_detail": {
+        "file": "DonHang_ChiTiet_04.2025",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng sản phẩm",
+        "money_col": "Tổng tiền"
+      }
+    }
+  },
+  "biz_104": {
+    "schema": {
+      "DanhSachQuyDoi": [
+        "Tên sản phẩm",
+        "Đơn vị quy đổi",
+        "Tỉ lệ quy đổi",
+        "Đơn vị cơ bản"
+      ],
+      "DonHang_ChiTiet": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "biz_104_revenue.csv",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền",
+        "status_col": "Trạng thái đơn hàng",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "biz_104_import.csv",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền"
+      },
+      "inventory": {
+        "file": "biz_104_inventory.csv",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng sản phẩm"
+      },
+      "product": {
+        "file": "biz_104_product.csv",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "SKU",
+        "price_col": "Giá sản phẩm"
+      },
+      "customer": {
+        "file": "biz_104_customer.csv",
+        "name_col": "Tên khách hàng",
+        "id_col": "ID khách hàng"
+      },
+      "order_detail": {
+        "file": "biz_104_order_detail.csv",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng sản phẩm",
+        "money_col": "Tổng tiền"
+      }
+    }
+  },
+  "biz_105": {
+    "schema": {
+      "BangGia": [
+        "Ngày áp dụng",
+        "ten_hang",
+        "Giá mới",
+        "Giá cũ"
+      ],
+      "DanhMuc": [
+        "Tên món",
+        "Đơn vị gốc",
+        "ĐV nhập",
+        "Hệ số"
+      ],
+      "SoBanHang_1_Thang 02 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 03 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 04 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 05 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 06 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 07 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 08 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 09 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 10 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 11 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 12 2025": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_1_Thang 01 2026": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_2026_Thang 02 2026": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_2026_Thang 03 2026": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_2026_Thang 04 2026": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_2026_Thang 05 2026": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoBanHang_2026_Thang 06 2026": [
+        "Hàng",
+        "so_luong",
+        "Unit",
+        "Trị giá",
+        "Status",
+        "Giá lẻ",
+        "Giờ",
+        "Mã hóa đơn",
+        "Ngày giao dịch",
+        "Khách"
+      ],
+      "SoNhapHang": [
+        "Số phiếu",
+        "Ngày nhập",
+        "Ghi chu",
+        "Thành tiền",
+        "Nhà cung cấp",
+        "Tên mặt hàng",
+        "Giá nhập",
+        "ĐVT",
+        "SL nhập"
+      ],
+      "TonKho": [
+        "Hàng hóa",
+        "Đơn vị tính",
+        "Tồn cuối"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "SoBanHang_1_Thang 02 2025",
+        "date_col": "Ngày giao dịch",
+        "money_col": "Giá lẻ",
+        "status_col": "Status",
+        "cancelled_values": [
+          "đổi trả",
+          "hàng trả về"
+        ]
+      },
+      "import": {
+        "file": "SoNhapHang",
+        "date_col": "Ngày nhập",
+        "money_col": "Thành tiền"
+      },
+      "inventory": {
+        "file": "TonKho",
+        "product_col": "Hàng hóa",
+        "qty_col": "Tồn cuối"
+      },
+      "product": {
+        "file": "DanhMuc",
+        "name_col": "Tên món",
+        "sku_col": "Tên mặt hàng",
+        "price_col": "Giá nhập"
+      },
+      "customer": {
+        "file": "SoBanHang_1_Thang 01 2026",
+        "name_col": "Khách",
+        "id_col": "Mã hóa đơn"
+      },
+      "order_detail": {
+        "file": "SoBanHang_1_Thang 01 2026",
+        "order_id_col": "Mã hóa đơn",
+        "product_col": "Hàng",
+        "qty_col": "so_luong",
+        "money_col": "Giá lẻ"
+      }
+    }
+  },
+  "biz_106": {
+    "schema": {
+      "BaoCaoTonKho": [
+        "Mã hàng",
+        "Tên hàng",
+        "ĐVT",
+        "Tồn cuối kỳ"
+      ],
+      "DanhSachChiTietNhapHang": [
+        "Mã nhập hàng",
+        "STT",
+        "Mã hàng",
+        "ĐVT",
+        "Số lượng",
+        "Đơn giá"
+      ],
+      "DanhSachDonViTinh": [
+        "Mã hàng",
+        "ĐVT",
+        "Quy đổi",
+        "Giá bán"
+      ],
+      "DanhSachHoaDon": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Tổng sau giảm giá",
+        "Khách đã trả",
+        "Phương thức thanh toán",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDonChiTiet_1": [
+        "Mã hóa đơn",
+        "STT",
+        "Mã hàng",
+        "Tên hàng",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi",
+        "Giá vốn"
+      ],
+      "DanhSachHoaDonChiTiet_2": [
+        "Mã hóa đơn",
+        "STT",
+        "Mã hàng",
+        "Tên hàng",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi",
+        "Giá vốn"
+      ],
+      "DanhSachKhachHang": [
+        "Email",
+        "Mã khách hàng",
+        "Trạng thái",
+        "Tên công ty",
+        "Ngày sinh",
+        "Tổng điểm",
+        "Điểm tích lũy",
+        "Ghi chú",
+        "Số CMND/CCCD",
+        "Tên khách hàng",
+        "Mã số thuế",
+        "Người tạo",
+        "Điện thoại",
+        "Loại hình khách"
+      ],
+      "DanhSachNhapHang": [
+        "Mã nhập hàng",
+        "Thời gian",
+        "Mã NCC",
+        "Cần trả NCC",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "DanhSachSanPham": [
+        "Hình ảnh (url1,url2...)",
+        "Vị trí kệ",
+        "Ghi chú",
+        "Được bán trực tiếp",
+        "Nhóm hàng(3 Cấp)",
+        "Mã barcode",
+        "Mã hàng",
+        "Thương hiệu",
+        "Tồn lớn nhất",
+        "Tên hàng",
+        "Mã HH Liên quan",
+        "Thuộc tính",
+        "Giá bán",
+        "Mô tả sản phẩm",
+        "Loại hàng hóa",
+        "Giá vốn",
+        "ĐVT",
+        "Bảo hành",
+        "Đang kinh doanh",
+        "Trọng lượng",
+        "Mẫu ghi chú",
+        "Định mức tồn tối thiểu",
+        "Thời gian tạo"
+      ],
+      "SoQuy": [
+        "Mã phiếu",
+        "Thời gian",
+        "Mã hóa đơn",
+        "Phương thức thanh toán",
+        "Giá trị"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "DanhSachHoaDon",
+        "date_col": "Thời gian",
+        "money_col": "Tổng tiền hàng",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "DanhSachNhapHang",
+        "date_col": "Thời gian",
+        "money_col": "Cần trả NCC"
+      },
+      "inventory": {
+        "file": "DanhSachSanPham",
+        "product_col": "Mã hàng",
+        "qty_col": "Tồn lớn nhất"
+      },
+      "product": {
+        "file": "DanhSachSanPham",
+        "name_col": "Tên hàng",
+        "sku_col": "Mã hàng",
+        "price_col": "Giá bán"
+      },
+      "customer": {
+        "file": "DanhSachKhachHang",
+        "name_col": "Tên khách hàng",
+        "id_col": "Mã khách hàng"
+      },
+      "order_detail": {
+        "file": "DanhSachHoaDonChiTiet_1",
+        "order_id_col": "Mã hóa đơn",
+        "product_col": "Mã hàng",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_107": {
+    "schema": {
+      "SoBanHang": [
+        "Trạng thái xử lý",
+        "Tổng tiền",
+        "ngay_ban",
+        "Số lượng",
+        "Nội dung",
+        "don_gia",
+        "Đơn vị (tính)",
+        "Số lượng lẻ"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "biz_107",
+        "date_col": "ngay_ban",
+        "money_col": "Tổng tiền",
+        "status_col": "Trạng thái xử lý",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "biz_107",
+        "date_col": "ngay_ban",
+        "money_col": "Tổng tiền"
+      },
+      "inventory": {
+        "file": "biz_107",
+        "product_col": "Nội dung",
+        "qty_col": "Số lượng lẻ"
+      },
+      "product": {
+        "file": "biz_107",
+        "name_col": "Nội dung",
+        "sku_col": "Số lượng lẻ",
+        "price_col": "don_gia"
+      },
+      "customer": {
+        "file": "biz_107",
+        "name_col": "Nội dung",
+        "id_col": "Số lượng lẻ"
+      },
+      "order_detail": {
+        "file": "biz_107",
+        "order_id_col": "Số lượng lẻ",
+        "product_col": "Nội dung",
+        "qty_col": "Số lượng lẻ",
+        "money_col": "don_gia"
+      }
+    }
+  },
+  "biz_108": {
+    "schema": {
+      "BaoCaoTonKho": [
+        "Mã hàng",
+        "Tên hàng",
+        "ĐVT",
+        "Tồn cuối kỳ"
+      ],
+      "DanhSachChiTietNhapHang": [
+        "Mã nhập hàng",
+        "STT",
+        "Mã hàng",
+        "ĐVT",
+        "Số lượng",
+        "Đơn giá"
+      ],
+      "DanhSachHoaDon": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ",
+        "Kênh bán",
+        "Người bán",
+        "Trạng thái HĐĐT"
+      ],
+      "DanhSachHoaDonChiTiet": [
+        "Mã hóa đơn",
+        "Mã hàng",
+        "Tên hàng",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi",
+        "Đơn vị tính",
+        "STT"
+      ],
+      "DanhSachKhachHang": [
+        "Đối tượng KH",
+        "Tổng điểm",
+        "Trạng thái",
+        "Mã số thuế",
+        "Mã khách hàng",
+        "Tên khách hàng",
+        "Điện thoại",
+        "Ngày sinh",
+        "Nhóm khách hàng",
+        "Địa chỉ",
+        "Người tạo",
+        "Giới tính",
+        "CCCD",
+        "Tên công ty",
+        "Điểm hiện tại",
+        "Ngày tạo"
+      ],
+      "DanhSachNhapHang": [
+        "Mã nhập hàng",
+        "Thời gian",
+        "Mã NCC",
+        "Cần trả NCC",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "DanhSachSanPham": [
+        "Mã hàng",
+        "Tên hàng",
+        "Bảo hành",
+        "Nhóm hàng(3 Cấp)",
+        "Mô tả chi tiết",
+        "Trọng lượng",
+        "Vị trí",
+        "Hình ảnh (url1,url2...)",
+        "Mã barcode",
+        "Loại hàng hóa",
+        "Thuộc tính",
+        "Mẫu ghi chú",
+        "Giá bán",
+        "Được bán trực tiếp",
+        "Ghi chú",
+        "Mã HH Liên quan",
+        "ĐVT",
+        "Định mức tồn tối thiểu"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "DanhSachHoaDon",
+        "date_col": "Thời gian",
+        "money_col": "Tổng tiền hàng",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "DanhSachNhapHang",
+        "date_col": "Thời gian",
+        "money_col": "Cần trả NCC"
+      },
+      "inventory": {
+        "file": "DanhSachSanPham",
+        "product_col": "Mã hàng",
+        "qty_col": "Định mức tồn tối thiểu"
+      },
+      "product": {
+        "file": "DanhSachSanPham",
+        "name_col": "Tên hàng",
+        "sku_col": "Mã hàng",
+        "price_col": "Giá bán"
+      },
+      "customer": {
+        "file": "DanhSachKhachHang",
+        "name_col": "Tên khách hàng",
+        "id_col": "Mã khách hàng"
+      },
+      "order_detail": {
+        "file": "DanhSachHoaDonChiTiet",
+        "order_id_col": "Mã hóa đơn",
+        "product_col": "Mã hàng",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_109": {
+    "schema": {
+      "DanhSachHoaDonChiTiet": [
+        "Mã hóa đơn",
+        "STT",
+        "Mã hàng",
+        "Tên hàng",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi",
+        "Giá vốn"
+      ],
+      "DuLieuBanHang_DanhSachHoaDon": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Tổng sau giảm giá",
+        "Khách đã trả",
+        "Phương thức thanh toán",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Kênh bán",
+        "Người bán",
+        "Trạng thái HĐĐT"
+      ],
+      "DuLieuBanHang_DanhSachSanPham": [
+        "Tồn lớn nhất",
+        "Nhóm hàng(3 Cấp)",
+        "Vị trí",
+        "Mã hàng",
+        "Trọng lượng",
+        "Thuộc tính",
+        "Tên hàng",
+        "Mẫu ghi chú",
+        "Giá bán",
+        "Hình ảnh (url1,url2...)",
+        "Bảo hành",
+        "Định mức tồn tối thiểu",
+        "Giá vốn",
+        "Thương hiệu",
+        "Được bán trực tiếp",
+        "ĐVT",
+        "Đang kinh doanh",
+        "Thời gian tạo"
+      ],
+      "DuLieuBanHang_DanhSachKhachHang": [
+        "Mã khách hàng",
+        "Tổng điểm",
+        "Tên khách hàng",
+        "Điện thoại",
+        "MST",
+        "Trạng thái",
+        "Loại hình khách",
+        "Người tạo",
+        "Ghi chú KH",
+        "Tên công ty",
+        "Nhóm khách hàng",
+        "Ngày tạo",
+        "Sinh nhật"
+      ],
+      "DuLieuBanHang_BaoCaoTonKho": [
+        "Mã hàng",
+        "Tên hàng",
+        "ĐVT",
+        "Tồn cuối kỳ"
+      ],
+      "DuLieuBanHang_DanhSachNhapHang": [
+        "Mã nhập hàng",
+        "Thời gian",
+        "Mã NCC",
+        "Cần trả NCC",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "DuLieuBanHang_DanhSachChiTietNhapHang": [
+        "Mã nhập hàng",
+        "STT",
+        "Mã hàng",
+        "ĐVT",
+        "Số lượng",
+        "Đơn giá"
+      ],
+      "DuLieuBanHang_SoQuy": [
+        "Mã phiếu",
+        "Thời gian",
+        "Mã hóa đơn",
+        "Phương thức thanh toán",
+        "Giá trị"
+      ],
+      "DuLieuBanHang_DanhSachDonViTinh": [
+        "Mã hàng",
+        "ĐVT",
+        "Quy đổi",
+        "Giá bán"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "DuLieuBanHang_DanhSachHoaDon",
+        "date_col": "Thời gian",
+        "money_col": "Tổng tiền hàng",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "DuLieuBanHang_DanhSachNhapHang",
+        "date_col": "Thời gian",
+        "money_col": "Cần trả NCC"
+      },
+      "inventory": {
+        "file": "DuLieuBanHang_BaoCaoTonKho",
+        "product_col": "Mã hàng",
+        "qty_col": "Tồn cuối kỳ"
+      },
+      "product": {
+        "file": "DuLieuBanHang_DanhSachSanPham",
+        "name_col": "Tên hàng",
+        "sku_col": "Mã hàng",
+        "price_col": "Giá bán"
+      },
+      "customer": {
+        "file": "DuLieuBanHang_DanhSachKhachHang",
+        "name_col": "Tên khách hàng",
+        "id_col": "Mã khách hàng"
+      },
+      "order_detail": {
+        "file": "DanhSachHoaDonChiTiet",
+        "order_id_col": "Mã hóa đơn",
+        "product_col": "Mã hàng",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_110": {
+    "schema": {
+      "danh_sach_hoa_don": [
+        "Tien hang",
+        "TongTien",
+        "Mã bill",
+        "Bên mua",
+        "Ngày giao dịch",
+        "Status",
+        "Da tra",
+        "Chưa trả"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "biz_110",
+        "date_col": "Ngày giao dịch",
+        "money_col": "TongTien",
+        "status_col": "Status",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "biz_110",
+        "date_col": "Ngày giao dịch",
+        "money_col": "TongTien"
+      },
+      "inventory": {
+        "file": "biz_110",
+        "product_col": "Mã bill",
+        "qty_col": "Da tra"
+      },
+      "product": {
+        "file": "biz_110",
+        "name_col": "Mã bill",
+        "sku_col": "Da tra",
+        "price_col": "Da tra"
+      },
+      "customer": {
+        "file": "biz_110",
+        "name_col": "Mã bill",
+        "id_col": "Da tra"
+      },
+      "order_detail": {
+        "file": "biz_110",
+        "order_id_col": "Mã bill",
+        "product_col": "Mã bill",
+        "qty_col": "Da tra",
+        "money_col": "Da tra"
+      }
+    }
+  },
+  "biz_111": {
+    "schema": {
+      "chi_tiet_don": [
+        "SL quy đổi",
+        "Thứ tự",
+        "Giá đơn vị",
+        "SL",
+        "T.Tiền",
+        "ID SP",
+        "Ma don",
+        "Đơn vị (tính)"
+      ],
+      "don_hang": [
+        "Số KH",
+        "Xử lý",
+        "NgayBan",
+        "Bán qua",
+        "Còn lại",
+        "Khách trả",
+        "Tổng bill",
+        "Phương thức TT",
+        "Mã chứng từ"
+      ],
+      "khach_hang": [
+        "ma_kh",
+        "Điểm tích lũy",
+        "Nhóm",
+        "Trạng thái",
+        "Email",
+        "Ghi chú KH",
+        "Mã số thuế",
+        "Loại hình khách",
+        "Ngày sinh",
+        "CCCD",
+        "Phone",
+        "Người tạo",
+        "Addr",
+        "Khách lẻ/sỉ",
+        "Tổng điểm"
+      ],
+      "san_pham": [
+        "Thuộc tính",
+        "Được bán trực tiếp",
+        "Mã barcode",
+        "SKU",
+        "Hình ảnh",
+        "Giá",
+        "Đơn vị",
+        "Loại hàng hóa",
+        "Thương hiệu",
+        "Nhom hang",
+        "Trọng lượng",
+        "Vị trí",
+        "Mẫu ghi chú",
+        "Mô tả sản phẩm",
+        "Bảo hành",
+        "Tồn nhỏ nhất",
+        "Mã HH Liên quan",
+        "Sản phẩm"
+      ],
+      "thanh_toan": [
+        "Thời gian thu",
+        "Phương thức",
+        "Tiền",
+        "Mã phiếu thu",
+        "Số HĐ"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "don_hang",
+        "date_col": "NgayBan",
+        "money_col": "Tổng bill",
+        "status_col": "Xử lý",
+        "cancelled_values": [
+          "hủy",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "san_pham",
+        "date_col": "Ngày nhập",
+        "money_col": "Giá",
+        "status_col": "Được bán trực tiếp"
+      },
+      "inventory": {
+        "file": "san_pham",
+        "product_col": "SKU",
+        "qty_col": "Tồn nhỏ nhất"
+      },
+      "product": {
+        "file": "san_pham",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "SKU",
+        "price_col": "Giá"
+      },
+      "customer": {
+        "file": "khach_hang",
+        "name_col": "Tên khách hàng",
+        "id_col": "ma_kh"
+      },
+      "order_detail": {
+        "file": "chi_tiet_don",
+        "order_id_col": "Ma don",
+        "product_col": "ID SP",
+        "qty_col": "SL",
+        "money_col": "T.Tiền"
+      }
+    }
+  },
+  "biz_112": {
+    "schema": {
+      "Danh s├ích h├áng h├│a": [
+        "Mã hàng hóa",
+        "Mã vạch EAN",
+        "Tồn nhỏ nhất",
+        "Trọng lượng",
+        "Ghi chú",
+        "Loại hàng hóa",
+        "Mã HH Liên quan",
+        "Mô tả sản phẩm",
+        "Bảo hành",
+        "Tên hàng hóa",
+        "Vị trí",
+        "Nhóm hàng hóa",
+        "Đơn vị tính",
+        "Giá bán",
+        "Tồn lớn nhất",
+        "Giá vốn"
+      ],
+      "So_chi_tiet_ban_hang_1_T04_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T05_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T06_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T07_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T08_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T09_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T10_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T11_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T12_2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T01_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T02_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T03_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T04_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_1_T05_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_2026_T06_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_2026_T07_2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "So_chi_tiet_ban_hang_1_T04_2025",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "So_chi_tiet_ban_hang_1_T04_2025",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền"
+      },
+      "inventory": {
+        "file": "So_chi_tiet_ban_hang_1_T04_2025",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng"
+      },
+      "product": {
+        "file": "So_chi_tiet_ban_hang_1_T04_2025",
+        "name_col": "Tên hàng hóa",
+        "sku_col": "Mã hàng hóa",
+        "price_col": "Giá bán"
+      },
+      "customer": {
+        "file": "So_chi_tiet_ban_hang_1_T04_2025",
+        "name_col": "Tên hàng hóa",
+        "id_col": "Mã đơn hàng"
+      },
+      "order_detail": {
+        "file": "So_chi_tiet_ban_hang_1_T04_2025",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_113": {
+    "schema": {
+      "SoBanHang": [
+        "DonVi",
+        "Ngày mua",
+        "Số lượng lẻ",
+        "thanh_tien",
+        "Đơn giá bán",
+        "SL bán",
+        "Ghi chú TT",
+        "Mặt hàng"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "biz_113",
+        "date_col": "Ngày mua",
+        "money_col": "thanh_tien",
+        "status_col": "Ghi chú TT",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "biz_113",
+        "date_col": "Ngày mua",
+        "money_col": "thanh_tien"
+      },
+      "inventory": {
+        "file": "biz_113",
+        "product_col": "Mặt hàng",
+        "qty_col": "SL bán"
+      },
+      "product": {
+        "file": "biz_113",
+        "name_col": "Mặt hàng",
+        "sku_col": "Mặt hàng",
+        "price_col": "Đơn giá bán"
+      },
+      "customer": {
+        "file": "biz_113",
+        "name_col": "Tên khách hàng",
+        "id_col": "ID khách hàng"
+      },
+      "order_detail": {
+        "file": "biz_113",
+        "order_id_col": "DonVi",
+        "product_col": "Mặt hàng",
+        "qty_col": "SL bán",
+        "money_col": "thanh_tien"
+      }
+    }
+  },
+  "biz_114": {
+    "schema": {
+      "ban_hang": [
+        "Giá bán lẻ",
+        "Đơn vị tính",
+        "Mã GD",
+        "Quy ra ĐV lẻ",
+        "Sluong",
+        "Sản phẩm",
+        "Tổng",
+        "Tên khách",
+        "Ngày",
+        "trang_thai"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "ban_hang",
+        "date_col": "Ngày",
+        "money_col": "Tổng",
+        "status_col": "trang_thai",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "ban_hang",
+        "date_col": "Ngày",
+        "money_col": "Tổng"
+      },
+      "inventory": {
+        "file": "biz_114/inventory.json",
+        "product_col": "Sản phẩm",
+        "qty_col": "Sluong"
+      },
+      "product": {
+        "file": "biz_114/product.json",
+        "name_col": "Sản phẩm",
+        "sku_col": "Mã GD",
+        "price_col": "Giá bán lẻ"
+      },
+      "customer": {
+        "file": "biz_114/customer.json",
+        "name_col": "Tên khách",
+        "id_col": "Tên khách"
+      },
+      "order_detail": {
+        "file": "biz_114/order_detail.json",
+        "order_id_col": "Mã GD",
+        "product_col": "Sản phẩm",
+        "qty_col": "Sluong",
+        "money_col": "Tổng"
+      }
+    }
+  },
+  "biz_115": {
+    "schema": {
+      "Bß║úng k├¬ phiß║┐u giao h├áng": [
+        "Ngày giao hàng",
+        "Mã đơn hàng",
+        "Lần giao",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng giao",
+        "Biển số xe",
+        "Người giao hàng"
+      ],
+      "Chi tiß║┐t c├┤ng nß╗ú theo hß║ín": [
+        "Mã đơn hàng",
+        "Số ngày được nợ",
+        "Hạn thanh toán"
+      ],
+      "Danh s├ích h├áng h├│a": [
+        "Mã hàng hóa",
+        "Được bán trực tiếp",
+        "Thương hiệu",
+        "Tên hàng hóa",
+        "Nhóm hàng hóa",
+        "Vị trí",
+        "Mẫu ghi chú",
+        "Loại hàng hóa",
+        "Ghi chú",
+        "Đơn vị tính",
+        "Bảo hành",
+        "Giá vốn",
+        "Mô tả sản phẩm",
+        "Định mức tồn tối thiểu",
+        "Trọng lượng"
+      ],
+      "So_chi_tiet_ban_hang_02.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_03.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_04.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_05.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_06.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_07.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_08.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_09.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_10.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_11.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_12.2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_01.2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_02.2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_03.2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_04.2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_05.2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "So_chi_tiet_ban_hang_02.2025",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "So_chi_tiet_ban_hang_02.2025",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền"
+      },
+      "inventory": {
+        "file": "Danh_sích_hàng_h├│a",
+        "product_col": "Mã hàng hóa",
+        "qty_col": "Số lượng"
+      },
+      "product": {
+        "file": "Danh_sích_hàng_h├│a",
+        "name_col": "Tên hàng hóa",
+        "sku_col": "Mã hàng hóa",
+        "price_col": "Giá vốn"
+      },
+      "customer": {
+        "file": "So_chi_tiet_ban_hang_02.2025",
+        "name_col": "Khách hàng",
+        "id_col": "Mã đơn hàng"
+      },
+      "order_detail": {
+        "file": "So_chi_tiet_ban_hang_02.2025",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Mã hàng hóa",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_116": {
+    "schema": {
+      "Bao_cao_ban_hang_So_chi_tiet_ban_hang": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "Bao_cao_ban_hang_Danh sách hàng hóa": [
+        "Bảo hành",
+        "Mã hàng hóa",
+        "Tên hàng hóa",
+        "Hình ảnh (url1,url2...)",
+        "Thuộc tính",
+        "Mẫu ghi chú",
+        "Mô tả sản phẩm",
+        "Nhóm hàng hóa",
+        "Đơn vị tính",
+        "Trọng lượng",
+        "Tồn nhỏ nhất",
+        "Mã HH Liên quan",
+        "Ghi chú",
+        "Được bán trực tiếp",
+        "Giá vốn",
+        "Vị trí",
+        "Tồn lớn nhất"
+      ],
+      "Bao_cao_ban_hang_Bảng kê phiếu giao hàng": [
+        "Ngày giao hàng",
+        "Mã đơn hàng",
+        "Lần giao",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng giao",
+        "Biển số xe",
+        "Người giao hàng"
+      ],
+      "Bao_cao_ban_hang_Chi tiết công nợ theo hạn": [
+        "Mã đơn hàng",
+        "Số ngày được nợ",
+        "Hạn thanh toán"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "Bao_cao_ban_hang_So_chi_tiet_ban_hang",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "Bao_cao_ban_hang_Danh sách hàng hóa",
+        "date_col": "Bảo hành",
+        "money_col": "Giá vốn"
+      },
+      "inventory": {
+        "file": "Bao_cao_ban_hang_Bảng kê phiếu giao hàng",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng giao"
+      },
+      "product": {
+        "file": "Bao_cao_ban_hang_Danh sách hàng hóa",
+        "name_col": "Tên hàng hóa",
+        "sku_col": "Mã hàng hóa",
+        "price_col": "Giá vốn"
+      },
+      "customer": {
+        "file": "Bao_cao_ban_hang_Chi tiết công nợ theo hạn",
+        "name_col": "Khách hàng",
+        "id_col": "Mã đơn hàng"
+      },
+      "order_detail": {
+        "file": "Bao_cao_ban_hang_So_chi_tiet_ban_hang",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_117": {
+    "schema": {
+      "BangGia": [
+        "Ngày áp dụng",
+        "Giá cũ",
+        "Giá mới",
+        "TenHang"
+      ],
+      "DanhMuc": [
+        "Hàng",
+        "ĐV lớn",
+        "ĐV nhỏ",
+        "Hệ số QĐ"
+      ],
+      "SoBanHang_Tháng 01-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 02-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 03-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 04-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 05-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 06-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 07-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 08-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 09-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 10-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 11-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 12-2025": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 01-2026": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 02-2026": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 03-2026": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 04-2026": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoBanHang_Tháng 05-2026": [
+        "Giờ",
+        "Mã phiếu",
+        "TenKH",
+        "Ngày lập",
+        "Tiền",
+        "Ghi chú TT",
+        "Giá",
+        "DonVi",
+        "Số lượng hàng",
+        "Tên SP"
+      ],
+      "SoGiaoHang": [
+        "ĐV gốc",
+        "Biển số xe",
+        "Mã bill",
+        "Lượt giao",
+        "SL thực giao",
+        "Tên hàng",
+        "Ngày chở",
+        "Người chở"
+      ],
+      "SoHanNo": [
+        "So hoa don",
+        "Hạn nợ (ngày)",
+        "Han tra"
+      ],
+      "SoNhapHang": [
+        "Số phiếu",
+        "Product",
+        "Ngày nhập",
+        "ĐVT",
+        "Thành tiền",
+        "Nội dung",
+        "Nhà cung cấp",
+        "SL nhập",
+        "Giá nhập"
+      ],
+      "TonKho": [
+        "Tồn thực",
+        "Đơn vị",
+        "Product"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "data/revenue.csv",
+        "date_col": "Ngày lập",
+        "money_col": "Tiền",
+        "status_col": "Ghi chú TT",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "data/import.csv",
+        "date_col": "Ngày nhập",
+        "money_col": "Thành tiền"
+      },
+      "inventory": {
+        "file": "data/inventory.csv",
+        "product_col": "Tên SP",
+        "qty_col": "Số lượng hàng"
+      },
+      "product": {
+        "file": "data/product.csv",
+        "name_col": "Tên SP",
+        "sku_col": "SKU",
+        "price_col": "Giá"
+      },
+      "customer": {
+        "file": "data/customer.csv",
+        "name_col": "TênKH",
+        "id_col": "Mã phiếu"
+      },
+      "order_detail": {
+        "file": "data/order_detail.csv",
+        "order_id_col": "Mã phiếu",
+        "product_col": "Tên SP",
+        "qty_col": "Số lượng hàng",
+        "money_col": "Tiền"
+      }
+    }
+  },
+  "biz_118": {
+    "schema": {
+      "Bß║úng k├¬ phiß║┐u giao h├áng": [
+        "Ngày giao hàng",
+        "Mã đơn hàng",
+        "Lần giao",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng giao",
+        "Biển số xe",
+        "Người giao hàng"
+      ],
+      "Chi tiß║┐t c├┤ng nß╗ú theo hß║ín": [
+        "Mã đơn hàng",
+        "Số ngày được nợ",
+        "Hạn thanh toán"
+      ],
+      "Danh s├ích h├áng h├│a": [
+        "Hình ảnh (url1,url2...)",
+        "Vị trí",
+        "Trọng lượng",
+        "Bảo hành",
+        "Mã hàng hóa",
+        "Mã barcode",
+        "Mô tả sản phẩm",
+        "Tên hàng hóa",
+        "Loại hàng hóa",
+        "Nhóm hàng hóa",
+        "Đơn vị tính",
+        "Mã HH Liên quan",
+        "Tồn lớn nhất",
+        "Ghi chú",
+        "Mẫu ghi chú",
+        "Được bán trực tiếp"
+      ],
+      "So_chi_tiet_ban_hang_T02-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T03-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T04-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T05-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T06-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T07-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T08-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T09-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T10-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T11-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T12-2025": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T01-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T02-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T03-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T04-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T05-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T06-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T07-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T08-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ],
+      "So_chi_tiet_ban_hang_T09-2026": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi",
+        "Khách hàng"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "revenue.csv",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "hủy",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "import.csv",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền"
+      },
+      "inventory": {
+        "file": "inventory.csv",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng"
+      },
+      "product": {
+        "file": "product.csv",
+        "name_col": "Tên hàng hóa",
+        "sku_col": "Mã hàng hóa",
+        "price_col": "Đơn giá"
+      },
+      "customer": {
+        "file": "customer.csv",
+        "name_col": "Tên khách hàng",
+        "id_col": "Mã khách hàng"
+      },
+      "order_detail": {
+        "file": "order_detail.csv",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  },
+  "biz_119": {
+    "schema": {
+      "BaoCaoTonKho": [
+        "Mã hàng",
+        "Tên hàng",
+        "ĐVT",
+        "Tồn cuối kỳ"
+      ],
+      "DanhSachChiTietNhapHang": [
+        "Mã nhập hàng",
+        "STT",
+        "Mã hàng",
+        "ĐVT",
+        "Số lượng",
+        "Đơn giá",
+        "Lô",
+        "Hạn sử dụng"
+      ],
+      "DanhSachHoaDon_T01-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T02-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T03-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T04-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T05-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T06-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T07-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T08-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T09-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T10-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T11-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T12-2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T01-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T02-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T03-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T04-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T05-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T06-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_T07-2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDonChiTiet": [
+        "Mã hóa đơn",
+        "Mã hàng",
+        "Tên hàng",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi",
+        "STT"
+      ],
+      "DanhSachHoaDonChiTietLo": [
+        "Mã hóa đơn",
+        "STT",
+        "Lô",
+        "Số lượng (ĐVT cơ bản)",
+        "Số lượng trả (ĐVT cơ bản)"
+      ],
+      "DanhSachKhachHang": [
+        "Công ty",
+        "Tổng điểm",
+        "Mã khách hàng",
+        "Ghi chú KH",
+        "Ngày sinh",
+        "Tên khách hàng",
+        "Người tạo",
+        "Đối tượng KH",
+        "Điểm tích lũy",
+        "Điện thoại",
+        "MST",
+        "Địa chỉ"
+      ],
+      "DanhSachLoHang": [
+        "Mã nhập hàng",
+        "Mã hàng",
+        "Lô",
+        "Hạn sử dụng",
+        "Số lượng (ĐVT cơ bản)"
+      ],
+      "DanhSachNhapHang": [
+        "Mã nhập hàng",
+        "Thời gian",
+        "Mã NCC",
+        "Cần trả NCC",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "DanhSachSanPham": [
+        "Trọng lượng",
+        "Mã hàng",
+        "Loại hàng hóa",
+        "Tên hàng",
+        "Tồn nhỏ nhất",
+        "Bảo hành",
+        "Ghi chú",
+        "Được bán trực tiếp",
+        "Mẫu ghi chú",
+        "Nhóm hàng(3 Cấp)",
+        "Vị trí kệ",
+        "Mô tả chi tiết",
+        "Thuộc tính",
+        "Hình ảnh (url1,url2...)",
+        "Giá bán",
+        "ĐVT",
+        "Mã HH Liên quan",
+        "Thương hiệu",
+        "Mã vạch EAN",
+        "Tồn lớn nhất"
+      ],
+      "DanhSachThuoc": [
+        "Mã hàng",
+        "Hoạt chất",
+        "Thuốc kê đơn"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "revenue.csv",
+        "date_col": "date",
+        "money_col": "amount",
+        "status_col": "status",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "import.csv",
+        "date_col": "date",
+        "money_col": "amount"
+      },
+      "inventory": {
+        "file": "inventory.csv",
+        "product_col": "product",
+        "qty_col": "quantity"
+      },
+      "product": {
+        "file": "product.csv",
+        "name_col": "name",
+        "sku_col": "sku",
+        "price_col": "price"
+      },
+      "customer": {
+        "file": "customer.csv",
+        "name_col": "name",
+        "id_col": "id"
+      },
+      "order_detail": {
+        "file": "order_detail.csv",
+        "order_id_col": "order_id",
+        "product_col": "product",
+        "qty_col": "quantity",
+        "money_col": "amount"
+      }
+    }
+  },
+  "biz_120": {
+    "schema": {
+      "BaoCaoTonKho": [
+        "Mã hàng",
+        "Tên hàng",
+        "ĐVT",
+        "Tồn cuối kỳ"
+      ],
+      "DanhSachChiTietNhapHang": [
+        "Mã nhập hàng",
+        "STT",
+        "Mã hàng",
+        "ĐVT",
+        "Số lượng",
+        "Đơn giá",
+        "Lô",
+        "Hạn sử dụng"
+      ],
+      "DanhSachHoaDon_01.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_02.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_03.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_04.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_05.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_06.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_07.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_08.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_09.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_10.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_11.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_12.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_01.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_02.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_03.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_04.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_05.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDon_06.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Còn nợ",
+        "Kênh bán",
+        "Ghi chú"
+      ],
+      "DanhSachHoaDonChiTiet": [
+        "Mã hóa đơn",
+        "Mã hàng",
+        "Tên hàng",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi"
+      ],
+      "DanhSachHoaDonChiTietLo": [
+        "Mã hóa đơn",
+        "STT",
+        "Lô",
+        "Số lượng (ĐVT cơ bản)",
+        "Số lượng trả (ĐVT cơ bản)"
+      ],
+      "DanhSachKhachHang": [
+        "Mã khách hàng",
+        "Ghi chú",
+        "Mã số thuế",
+        "Tên khách hàng",
+        "Người tạo",
+        "CCCD",
+        "Ngày sinh",
+        "E-mail",
+        "Đối tượng KH",
+        "Tên công ty",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "DanhSachLoHang": [
+        "Mã nhập hàng",
+        "Mã hàng",
+        "Lô",
+        "Hạn sử dụng",
+        "Số lượng (ĐVT cơ bản)"
+      ],
+      "DanhSachNhapHang": [
+        "Mã nhập hàng",
+        "Thời gian",
+        "Mã NCC",
+        "Cần trả NCC",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "DanhSachSanPham": [
+        "Trọng lượng",
+        "Mã hàng",
+        "Định mức tồn tối thiểu",
+        "Tên hàng",
+        "Mô tả chi tiết",
+        "Nhóm hàng(3 Cấp)",
+        "Mẫu ghi chú",
+        "Định mức tồn tối đa",
+        "Được bán trực tiếp",
+        "Bảo hành",
+        "Mã HH Liên quan",
+        "Giá bán",
+        "Loại hàng hóa",
+        "ĐVT",
+        "Giá vốn",
+        "Hình ảnh",
+        "Thời gian tạo"
+      ],
+      "DanhSachThuoc": [
+        "Mã hàng",
+        "Hoạt chất",
+        "Thuốc kê đơn"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "revenue.csv",
+        "date_col": "date",
+        "money_col": "amount",
+        "status_col": "status",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "import.csv",
+        "date_col": "date",
+        "money_col": "amount"
+      },
+      "inventory": {
+        "file": "inventory.csv",
+        "product_col": "product",
+        "qty_col": "quantity"
+      },
+      "product": {
+        "file": "product.csv",
+        "name_col": "name",
+        "sku_col": "sku",
+        "price_col": "price"
+      },
+      "customer": {
+        "file": "customer.csv",
+        "name_col": "name",
+        "id_col": "id"
+      },
+      "order_detail": {
+        "file": "order_detail.csv",
+        "order_id_col": "order_id",
+        "product_col": "product",
+        "qty_col": "quantity",
+        "money_col": "amount"
+      }
+    }
+  },
+  "biz_121": {
+    "schema": {
+      "DonHang_ChiTiet": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DuLieuXuat_DanhSachQuyDoi": [
+        "Tên sản phẩm",
+        "Đơn vị quy đổi",
+        "Tỉ lệ quy đổi",
+        "Đơn vị cơ bản"
+      ],
+      "DuLieuXuat_DanhSachSanPham": [
+        "Vị trí",
+        "Ghi chú",
+        "Mã SKU",
+        "Bảo hành",
+        "Thương hiệu",
+        "Mẫu ghi chú",
+        "Tên sản phẩm",
+        "Trọng lượng",
+        "Mã barcode",
+        "Đơn vị",
+        "Mã HH Liên quan",
+        "Tồn lớn nhất",
+        "Hình ảnh (url1,url2...)",
+        "Thuộc tính",
+        "Mô tả chi tiết",
+        "Loại sản phẩm",
+        "Loại hàng hóa"
+      ],
+      "DuLieuXuat_DonNhapHang": [
+        "Mã đơn nhập",
+        "Ngày nhập",
+        "Mã nhà cung cấp"
+      ],
+      "DuLieuXuat_DonNhapHang_ChiTiet": [
+        "Mã đơn nhập",
+        "Mã SKU",
+        "Mã lô",
+        "Hạn sử dụng",
+        "Số lượng nhập"
+      ],
+      "DuLieuXuat_DonHang_Lo": [
+        "Mã đơn hàng",
+        "Mã lô",
+        "Số lượng",
+        "Số lượng trả"
+      ],
+      "DuLieuXuat_DanhSachThuoc": [
+        "Mã SKU",
+        "Hoạt chất",
+        "Thuốc kê đơn"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "DonHang_ChiTiet",
+        "date_col": "Ngày đặt hàng",
+        "money_col": "Tổng tiền",
+        "status_col": "Trạng thái đơn hàng",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "DuLieuXuat_DonNhapHang",
+        "date_col": "Ngày nhập",
+        "money_col": "Số lượng nhập"
+      },
+      "inventory": {
+        "file": "DuLieuXuat_DanhSachSanPham",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng"
+      },
+      "product": {
+        "file": "DuLieuXuat_DanhSachSanPham",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "Mã SKU",
+        "price_col": "Giá sản phẩm"
+      },
+      "customer": {
+        "file": "DonHang_ChiTiet",
+        "name_col": "Tên khách hàng",
+        "id_col": "Mã khách hàng"
+      },
+      "order_detail": {
+        "file": "DonHang_ChiTiet",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên sản phẩm",
+        "qty_col": "Số lượng",
+        "money_col": "Tổng tiền"
+      }
+    }
+  },
+  "biz_122": {
+    "schema": {
+      "DanhSachQuyDoi": [
+        "Tên sản phẩm",
+        "Đơn vị quy đổi",
+        "Tỉ lệ quy đổi",
+        "Đơn vị cơ bản"
+      ],
+      "DanhSachSanPham": [
+        "Ghi chú",
+        "Mô tả sản phẩm",
+        "Tồn lớn nhất",
+        "Vị trí",
+        "Mã SKU",
+        "Mã HH Liên quan",
+        "Thương hiệu",
+        "Thuộc tính",
+        "Tên sản phẩm",
+        "Hình ảnh",
+        "Trọng lượng",
+        "Mã vạch EAN",
+        "Bảo hành",
+        "Đơn vị",
+        "Định mức tồn tối thiểu",
+        "Loại hàng hóa",
+        "Mẫu ghi chú",
+        "Loại sản phẩm"
+      ],
+      "DanhSachThuoc": [
+        "Mã SKU",
+        "Hoạt chất",
+        "Thuốc kê đơn"
+      ],
+      "DonHang_ChiTiet_1_T01-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T02-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T03-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T04-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T05-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T06-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T07-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T08-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T09-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T10-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T11-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T12-2025": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T01-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T02-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T03-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T04-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_1_T05-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_2026_T06-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_ChiTiet_2026_T07-2026": [
+        "Mã đơn hàng",
+        "Ngày đặt hàng",
+        "Trạng thái đơn hàng",
+        "Tên khách hàng",
+        "Tên sản phẩm",
+        "Số lượng sản phẩm",
+        "Giá sản phẩm",
+        "Tổng tiền",
+        "Đơn vị tính"
+      ],
+      "DonHang_Lo_1": [
+        "Mã đơn hàng",
+        "Mã lô",
+        "Số lượng",
+        "Số lượng trả"
+      ],
+      "DonHang_Lo_2": [
+        "Mã đơn hàng",
+        "Mã lô",
+        "Số lượng",
+        "Số lượng trả"
+      ],
+      "DonNhapHang": [
+        "Mã đơn nhập",
+        "Ngày nhập",
+        "Mã nhà cung cấp"
+      ],
+      "DonNhapHang_ChiTiet": [
+        "Mã đơn nhập",
+        "Mã SKU",
+        "Mã lô",
+        "Hạn sử dụng",
+        "Số lượng nhập"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "revenue.csv",
+        "date_col": "date",
+        "money_col": "amount",
+        "status_col": "status",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "import.csv",
+        "date_col": "date",
+        "money_col": "amount"
+      },
+      "inventory": {
+        "file": "inventory.csv",
+        "product_col": "product",
+        "qty_col": "quantity"
+      },
+      "product": {
+        "file": "product.csv",
+        "name_col": "name",
+        "sku_col": "sku",
+        "price_col": "price"
+      },
+      "customer": {
+        "file": "customer.csv",
+        "name_col": "name",
+        "id_col": "id"
+      },
+      "order_detail": {
+        "file": "order_detail.csv",
+        "order_id_col": "order_id",
+        "product_col": "product",
+        "qty_col": "quantity",
+        "money_col": "amount"
+      }
+    }
+  },
+  "biz_123": {
+    "schema": {
+      "chi_nhanh": [
+        "IDCuaHang",
+        "MaChiNhanh",
+        "TenGoi",
+        "DiaChiLienHe",
+        "NgayKhaiTruong"
+      ],
+      "nhan_vien": [
+        "IDCuaHang",
+        "MaNhanVien",
+        "TenGoi",
+        "MaChiNhanh",
+        "ChucVu",
+        "NgayNhanViec",
+        "NgayThoiViec"
+      ],
+      "khach_hang": [
+        "trang_thai_kh",
+        "cccd",
+        "IDCuaHang",
+        "diem_hien_tai",
+        "MaKhachHang",
+        "ghi_chu_kh",
+        "ngay_sinh",
+        "email",
+        "TenGoi",
+        "SoDienThoai",
+        "NamNu",
+        "nguoi_tao",
+        "LoaiKhachHang",
+        "cong_ty",
+        "tong_diem",
+        "TaoLuc",
+        "loai_hinh_kh",
+        "DiaChiLienHe"
+      ],
+      "nha_cung_cap": [
+        "IDCuaHang",
+        "MaNhaCungCap",
+        "TenGoi",
+        "SoDienThoai",
+        "DiaChiLienHe"
+      ],
+      "san_pham": [
+        "hinh_anh",
+        "ma_vach_ean",
+        "bao_hanh",
+        "ban_truc_tiep",
+        "IDCuaHang",
+        "MaHangHoa",
+        "ghi_chu_hh",
+        "vi_tri",
+        "TenGoi",
+        "DanhMuc",
+        "loai_hang_hoa",
+        "ton_nho_nhat",
+        "thuong_hieu",
+        "DonViCoSo",
+        "GiaBanLe",
+        "GiaVonHang",
+        "mau_ghi_chu",
+        "mo_ta",
+        "TyLeThue",
+        "ConKinhDoanh",
+        "TaoLuc",
+        "ton_lon_nhat"
+      ],
+      "don_vi_sp": [
+        "IDCuaHang",
+        "MaHangHoa",
+        "DonViTinh",
+        "HeSoQuyDoi",
+        "GiaDonVi"
+      ],
+      "phieu_nhap": [
+        "IDCuaHang",
+        "MaPhieuNhap",
+        "MaNhaCungCap",
+        "MaChiNhanh",
+        "NgayNhapKho",
+        "TinhTrang",
+        "TongGiaTriNhap",
+        "DienGiai"
+      ],
+      "chi_tiet_nhap": [
+        "IDCuaHang",
+        "MaPhieuNhap",
+        "SoThuTu",
+        "MaHangHoa",
+        "DonViTinh",
+        "SL",
+        "DonGiaNhap",
+        "MaLo",
+        "HanSuDung"
+      ],
+      "don_hang": [
+        "IDCuaHang",
+        "MaHoaDon",
+        "MaChiNhanh",
+        "MaKhachHang",
+        "MaNhanVien",
+        "MaCaLam",
+        "KenhBanHang",
+        "ThoiGianLap",
+        "NgayLap",
+        "TinhTrang",
+        "TongTienHang",
+        "ChietKhau",
+        "PhiVanChuyen",
+        "ThueGTGT",
+        "TongThanhToan",
+        "KhachDaTra",
+        "ConPhaiThu",
+        "PhuongThucTT",
+        "SoHoaDonDienTu",
+        "TinhTrangHDDT",
+        "MaKhuyenMai",
+        "DienGiai"
+      ],
+      "chi_tiet_don": [
+        "IDCuaHang",
+        "MaHoaDon",
+        "SoThuTu",
+        "MaHangHoa",
+        "DonViTinh",
+        "SL",
+        "SLQuyDoi",
+        "GiaDonVi",
+        "ChietKhau",
+        "TriGia",
+        "GiaVonLucBan"
+      ],
+      "thanh_toan": [
+        "IDCuaHang",
+        "MaPhieuThu",
+        "MaHoaDon",
+        "NgayGioThu",
+        "SoTienThu",
+        "PhuongThuc",
+        "DienGiai"
+      ],
+      "tra_hang": [
+        "IDCuaHang",
+        "MaPhieuTra",
+        "MaHoaDon",
+        "NgayGioTra",
+        "NguyenNhan",
+        "TienHoanTra",
+        "CachHoanTien"
+      ],
+      "the_kho": [
+        "IDCuaHang",
+        "MaGiaoDichKho",
+        "MaHangHoa",
+        "MaChiNhanh",
+        "NgayGioPhatSinh",
+        "LoaiGiaoDich",
+        "SLQuyDoi",
+        "KieuChungTu",
+        "MaChungTu",
+        "TonCuoi"
+      ],
+      "lich_su_gia": [
+        "IDCuaHang",
+        "MaHangHoa",
+        "NgayApDung",
+        "GiaBanLe"
+      ],
+      "lo_hang": [
+        "IDCuaHang",
+        "MaHangHoa",
+        "MaLo",
+        "MaPhieuNhap",
+        "HanSuDung",
+        "SLNhapQuyDoi",
+        "DonGiaNhap"
+      ],
+      "chi_tiet_don_lo": [
+        "IDCuaHang",
+        "MaHoaDon",
+        "SoThuTu",
+        "MaLo",
+        "SLQuyDoi",
+        "SLTraQuyDoi"
+      ],
+      "thong_tin_thuoc": [
+        "IDCuaHang",
+        "MaHangHoa",
+        "ThanhPhanChinh",
+        "BanTheoDon"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "revenue_data.csv",
+        "date_col": "date",
+        "money_col": "amount",
+        "status_col": "status",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "import_data.csv",
+        "date_col": "date",
+        "money_col": "amount"
+      },
+      "inventory": {
+        "file": "inventory_data.csv",
+        "product_col": "product_name",
+        "qty_col": "quantity"
+      },
+      "product": {
+        "file": "product_data.csv",
+        "name_col": "product_name",
+        "sku_col": "product_sku",
+        "price_col": "price"
+      },
+      "customer": {
+        "file": "customer_data.csv",
+        "name_col": "customer_name",
+        "id_col": "customer_id"
+      },
+      "order_detail": {
+        "file": "order_detail_data.csv",
+        "order_id_col": "order_id",
+        "product_col": "product_name",
+        "qty_col": "quantity",
+        "money_col": "amount"
+      }
+    }
+  },
+  "biz_124": {
+    "schema": {
+      "BanHang_BanTheoLo": [
+        "Lô",
+        "SL quy ra lẻ",
+        "SL trả (ĐVT cơ bản)",
+        "No.",
+        "Mã hóa đơn"
+      ],
+      "BanHang_ChiTietHoaDon": [
+        "Giá vốn lúc bán",
+        "SL cơ bản",
+        "Khuyến mãi",
+        "Giá niêm yết",
+        "Thanh tien",
+        "Mã giao dịch",
+        "Chi tiết hàng",
+        "Slg",
+        "TT dòng",
+        "Ma hang",
+        "Đ.vị"
+      ],
+      "BanHang_DonViQuyDoi": [
+        "Đơn vị",
+        "Bằng",
+        "Giá bán theo đơn vị quy đổi",
+        "Mã sp"
+      ],
+      "BanHang_HangHoa": [
+        "Định mức tồn tối thiểu",
+        "Giá vốn hiện tại",
+        "Thương hiệu",
+        "Thuộc tính",
+        "Phân loại",
+        "Món",
+        "Được bán trực tiếp",
+        "Mã HH Liên quan",
+        "ma_sp",
+        "Mô tả sản phẩm",
+        "Mẫu ghi chú",
+        "Giá",
+        "Ghi chú",
+        "Đơn vị",
+        "Trọng lượng",
+        "Loại hàng hóa"
+      ],
+      "BanHang_HoaDon": [
+        "Đã thu",
+        "Tên KH",
+        "Trạng thái",
+        "Giờ tạo đơn",
+        "Mã NV bán",
+        "Phương thức TT",
+        "Ngày bán",
+        "Nguồn đơn",
+        "Còn nợ",
+        "Mã KH mua",
+        "Tiền hàng trước giảm",
+        "Tong tien",
+        "Order ID",
+        "CK"
+      ],
+      "BanHang_KhachHang": [
+        "Điểm tích lũy",
+        "Công ty",
+        "Hạng",
+        "E-mail",
+        "MST",
+        "Ngày sinh",
+        "CCCD",
+        "Trạng thái",
+        "ten_kh",
+        "Người tạo",
+        "Ghi chú",
+        "Tổng điểm",
+        "Loại hình khách",
+        "Số điện thoại",
+        "Customer ID"
+      ],
+      "BanHang_LichSuGia": [
+        "Mã sản phẩm",
+        "Giá mới",
+        "Ngày áp dụng",
+        "Sản phẩm",
+        "Giá cũ"
+      ],
+      "BanHang_LoHang": [
+        "HSD",
+        "Mã món",
+        "SL nhập (ĐVT cơ bản)",
+        "Mã phiếu nhập",
+        "Lô"
+      ],
+      "BanHang_PhieuThu": [
+        "Số tiền thu",
+        "Mã bill",
+        "Phiếu thu",
+        "Thời gian thu",
+        "PTTT"
+      ],
+      "BanHang_Thuoc": [
+        "Mã HH",
+        "Hoạt chất",
+        "Kê đơn"
+      ],
+      "SoTay_ChiPhi": [
+        "Ghi chú",
+        "Ngày chi",
+        "Mục",
+        "So tien"
+      ],
+      "SoTay_NhapHang": [
+        "SL nhập",
+        "Mô tả",
+        "Product",
+        "Thành tiền",
+        "Lô",
+        "HSD",
+        "Ngày nhập",
+        "Nhà cung cấp",
+        "ĐVT nhập",
+        "Số phiếu",
+        "Giá nhập"
+      ],
+      "ton_kho": [
+        "ID SP",
+        "Đơn vị",
+        "Ton kho",
+        "Hàng hóa"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "BanHang_HoaDon",
+        "date_col": "Ngày bán",
+        "money_col": "Tổng tien",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "Đổi trả",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "SoTay_NhapHang",
+        "date_col": "Ngày nhập",
+        "money_col": "Thành tiền",
+        "status_col": null
+      },
+      "inventory": {
+        "file": "ton_kho",
+        "product_col": "Hàng hóa",
+        "qty_col": "Ton kho"
+      },
+      "product": {
+        "file": "BanHang_HangHoa",
+        "name_col": "Món",
+        "sku_col": "ma_sp",
+        "price_col": "Giá"
+      },
+      "customer": {
+        "file": "BanHang_KhachHang",
+        "name_col": "Tên KH",
+        "id_col": "Customer ID"
+      },
+      "order_detail": {
+        "file": "BanHang_BanTheoLo",
+        "order_id_col": "No.",
+        "product_col": "Chi tiết hàng",
+        "qty_col": "SL trả (ĐVT cơ bản)",
+        "money_col": "Thanh tien"
+      }
+    }
+  },
+  "biz_125": {
+    "schema": {
+      "ban_hang": [
+        "dvt",
+        "Hàng bán",
+        "Khách hàng (tên)",
+        "Số lượng lẻ",
+        "Amount",
+        "Trạng thái xử lý",
+        "SL bán",
+        "Ngày bán",
+        "Số phiếu",
+        "Giá 1 đv"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "biz_125",
+        "date_col": "Ngày bán",
+        "money_col": "Amount",
+        "status_col": "Trạng thái xử lý",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "biz_125",
+        "date_col": "Ngày bán",
+        "money_col": "Amount"
+      },
+      "inventory": {
+        "file": "biz_125",
+        "product_col": "Hàng bán",
+        "qty_col": "SL bán"
+      },
+      "product": {
+        "file": "biz_125",
+        "name_col": "Hàng bán",
+        "sku_col": "Hàng bán",
+        "price_col": "Giá 1 đv"
+      },
+      "customer": {
+        "file": "biz_125",
+        "name_col": "Khách hàng (tên)",
+        "id_col": "Khách hàng (tên)"
+      },
+      "order_detail": {
+        "file": "biz_125",
+        "order_id_col": "Số phiếu",
+        "product_col": "Hàng bán",
+        "qty_col": "SL bán",
+        "money_col": "Amount"
+      }
+    }
+  },
+  "biz_126": {
+    "schema": {
+      "SoBanHang": [
+        "Đơn vị tính",
+        "Số lượng bán",
+        "Thành tiền (đ)",
+        "Ten hang",
+        "SL lẻ",
+        "Trạng thái đơn",
+        "Ngày tháng",
+        "Price"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "biz_126",
+        "date_col": "Ngày tháng",
+        "money_col": "Thành tiền (đ)",
+        "status_col": "Trạng thái đơn",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "biz_126",
+        "date_col": "Ngày tháng",
+        "money_col": "Thành tiền (đ)"
+      },
+      "inventory": {
+        "file": "biz_126",
+        "product_col": "Ten hang",
+        "qty_col": "SL lẻ"
+      },
+      "product": {
+        "file": "biz_126",
+        "name_col": "Ten hang",
+        "sku_col": "SL lẻ",
+        "price_col": "Price"
+      },
+      "customer": {
+        "file": "biz_126",
+        "name_col": "Ten hang",
+        "id_col": "SL lẻ"
+      },
+      "order_detail": {
+        "file": "biz_126",
+        "order_id_col": "SL lẻ",
+        "product_col": "Ten hang",
+        "qty_col": "SL lẻ",
+        "money_col": "Thành tiền (đ)"
+      }
+    }
+  },
+  "biz_127": {
+    "schema": {
+      "chi_tiet_don": [
+        "Mã đơn hàng",
+        "SoLuong",
+        "No.",
+        "DVT",
+        "Amount",
+        "Số lượng lẻ",
+        "Mã mặt hàng",
+        "Đơn giá (đ)"
+      ],
+      "don_hang": [
+        "Còn nợ",
+        "Diễn giải",
+        "Tổng đơn",
+        "Loại bán",
+        "Ngày",
+        "Mã chứng từ",
+        "Customer ID",
+        "Khách trả",
+        "Trả bằng",
+        "Tình trạng"
+      ],
+      "khach_hang": [
+        "CCCD",
+        "Tên công ty",
+        "Di động",
+        "Email",
+        "Sinh nhật",
+        "Người tạo",
+        "Tổng điểm",
+        "Loại hình khách",
+        "Mã KH",
+        "Khách hàng (tên)",
+        "Điểm hiện tại",
+        "MST",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "san_pham": [
+        "Trọng lượng",
+        "Giá niêm yết",
+        "Mô tả chi tiết",
+        "Danh mục",
+        "Ghi chú",
+        "Mã sản phẩm bán",
+        "Tên SP",
+        "Mẫu ghi chú",
+        "Mã barcode",
+        "Loại hàng hóa",
+        "Tồn lớn nhất",
+        "Thương hiệu",
+        "Thuộc tính",
+        "Hình ảnh (url1,url2...)",
+        "Đơn vị cơ bản",
+        "Được bán trực tiếp",
+        "Mã HH Liên quan"
+      ],
+      "thanh_toan": [
+        "Số CT",
+        "Ngày thu",
+        "Mã GD",
+        "Giá trị",
+        "HTTT"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "don_hang",
+        "date_col": "Ngày",
+        "money_col": "Tổng đơn",
+        "status_col": "Tình trạng",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "san_pham",
+        "product_col": "Tên SP",
+        "qty_col": "Tồn lớn nhất"
+      },
+      "inventory": {
+        "file": "san_pham",
+        "product_col": "Tên SP",
+        "qty_col": "Tồn lớn nhất"
+      },
+      "product": {
+        "file": "san_pham",
+        "name_col": "Tên SP",
+        "sku_col": "Mã SP",
+        "price_col": "Giá niêm yết"
+      },
+      "customer": {
+        "file": "khach_hang",
+        "name_col": "Tên công ty",
+        "id_col": "Mã KH"
+      },
+      "order_detail": {
+        "file": "chi_tiet_don",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Mã mặt hàng",
+        "qty_col": "SoLuong",
+        "money_col": "Amount"
+      }
+    }
+  },
+  "biz_128": {
+    "schema": {
+      "BaoCaoTonKho": [
+        "Mã hàng",
+        "Tên hàng",
+        "ĐVT",
+        "Tồn cuối kỳ"
+      ],
+      "DanhSachChiTietNhapHang": [
+        "Mã nhập hàng",
+        "STT",
+        "Mã hàng",
+        "ĐVT",
+        "Số lượng",
+        "Đơn giá"
+      ],
+      "DanhSachHoaDon_04.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_05.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_06.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_07.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_08.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_09.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_10.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_11.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_12.2025": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_01.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_02.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_03.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_04.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_05.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_06.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_07.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_08.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDon_09.2026": [
+        "Mã hóa đơn",
+        "Thời gian",
+        "Mã KH",
+        "Khách hàng",
+        "Tổng tiền hàng",
+        "Giảm giá",
+        "Khách đã trả",
+        "Trạng thái",
+        "Thời gian tạo",
+        "Tổng sau giảm giá",
+        "Còn nợ"
+      ],
+      "DanhSachHoaDonChiTiet": [
+        "Mã hóa đơn",
+        "Mã hàng",
+        "Tên hàng",
+        "Số lượng",
+        "Đơn giá",
+        "Giảm giá",
+        "Thành tiền",
+        "Số lượng quy đổi",
+        "STT"
+      ],
+      "DanhSachHoaDonPhongBan": [
+        "Mã hóa đơn",
+        "Phòng/Bàn",
+        "Khu vực",
+        "Số khách"
+      ],
+      "DanhSachKhachHang": [
+        "Sinh nhật",
+        "Người tạo",
+        "Mã khách hàng",
+        "Email",
+        "Tên khách hàng",
+        "Điện thoại",
+        "Nhóm khách hàng",
+        "Loại hình khách",
+        "Điểm hiện tại",
+        "CCCD",
+        "Ghi chú KH",
+        "Công ty",
+        "Địa chỉ",
+        "Trạng thái",
+        "Giới tính",
+        "MST",
+        "Tổng điểm"
+      ],
+      "DanhSachNhapHang": [
+        "Mã nhập hàng",
+        "Thời gian",
+        "Mã NCC",
+        "Cần trả NCC",
+        "Trạng thái",
+        "Ghi chú"
+      ],
+      "DanhSachSanPham": [
+        "Mã hàng",
+        "Tồn nhỏ nhất",
+        "Loại hàng hóa",
+        "Tồn lớn nhất",
+        "Tên hàng",
+        "Nhóm hàng(3 Cấp)",
+        "Ghi chú",
+        "Giá bán",
+        "Thương hiệu",
+        "Mã HH Liên quan",
+        "Mẫu ghi chú",
+        "Mã barcode",
+        "Vị trí",
+        "Thuộc tính",
+        "Hình ảnh",
+        "ĐVT",
+        "Mô tả chi tiết",
+        "Trọng lượng",
+        "Thời gian tạo"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "revenue.csv",
+        "date_col": "date",
+        "money_col": "amount",
+        "status_col": "status",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "import.csv",
+        "date_col": "date",
+        "money_col": "amount"
+      },
+      "inventory": {
+        "file": "inventory.csv",
+        "product_col": "product",
+        "qty_col": "quantity"
+      },
+      "product": {
+        "file": "product.csv",
+        "name_col": "name",
+        "sku_col": "sku",
+        "price_col": "price"
+      },
+      "customer": {
+        "file": "customer.csv",
+        "name_col": "name",
+        "id_col": "id"
+      },
+      "order_detail": {
+        "file": "order_detail.csv",
+        "order_id_col": "order_id",
+        "product_col": "product",
+        "qty_col": "quantity",
+        "money_col": "amount"
+      }
+    }
+  },
+  "biz_129": {
+    "schema": {
+      "chi_tiet_don": [
+        "Tiền bán",
+        "TT dòng",
+        "S.L",
+        "Mã hàng bán",
+        "Quy ra ĐV lẻ",
+        "Số CT",
+        "Giảm giá",
+        "Giá 1 đv",
+        "ĐV tính"
+      ],
+      "don_hang": [
+        "Hình thức thanh toán",
+        "Dư nợ",
+        "Thanh toán",
+        "Tình trạng đơn",
+        "Số phiếu",
+        "Mã khách mua",
+        "Phải thu",
+        "Ngày bán"
+      ],
+      "khach_hang": [
+        "Ghi chú KH",
+        "Ngày sinh",
+        "Điểm hiện tại",
+        "Nhóm",
+        "Tổng điểm",
+        "KH",
+        "Email",
+        "Mã số thuế",
+        "Người tạo",
+        "Công ty",
+        "Số điện thoại",
+        "Số CMND/CCCD",
+        "Đối tượng KH",
+        "Trạng thái",
+        "Mã khách lẻ/sỉ"
+      ],
+      "san_pham": [
+        "Bảo hành",
+        "Giá hiện tại",
+        "Mã vạch EAN",
+        "Mã HH Liên quan",
+        "Đơn vị tính",
+        "Tên sản phẩm",
+        "Vị trí kệ",
+        "Nhom hang",
+        "Mô tả chi tiết",
+        "Ghi chú",
+        "Mẫu ghi chú",
+        "Được bán trực tiếp",
+        "Mã HH",
+        "Loại hàng hóa",
+        "Thuộc tính",
+        "Thương hiệu",
+        "Hình ảnh",
+        "Định mức tồn tối đa"
+      ],
+      "thanh_toan": [
+        "Mã GD",
+        "PTTT",
+        "Tiền",
+        "Mã giao dịch",
+        "Thời điểm"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "chi_tiet_don",
+        "date_col": "Ngày bán",
+        "money_col": "Tiền bán",
+        "status_col": "Tình trạng đơn",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "don_hang",
+        "date_col": "Ngày bán",
+        "money_col": "Thanh toán",
+        "status_col": "Tình trạng đơn"
+      },
+      "inventory": {
+        "file": "san_pham",
+        "product_col": "Mã HH",
+        "qty_col": "Định mức tồn tối đa"
+      },
+      "product": {
+        "file": "san_pham",
+        "name_col": "Tên sản phẩm",
+        "sku_col": "Mã vạch EAN",
+        "price_col": "Giá hiện tại"
+      },
+      "customer": {
+        "file": "khach_hang",
+        "name_col": "KH",
+        "id_col": "Mã khách lẻ/sỉ"
+      },
+      "order_detail": {
+        "file": "chi_tiet_don",
+        "order_id_col": "Số CT",
+        "product_col": "Mã hàng bán",
+        "qty_col": "S.L",
+        "money_col": "Tiền bán"
+      }
+    }
+  },
+  "biz_130": {
+    "schema": {
+      "Danh s├ích h├áng h├│a": [
+        "Mã hàng hóa",
+        "Mô tả sản phẩm",
+        "Bảo hành",
+        "Được bán trực tiếp",
+        "Loại hàng hóa",
+        "Mã HH Liên quan",
+        "Mẫu ghi chú",
+        "Tên hàng hóa",
+        "Nhóm hàng hóa",
+        "Thương hiệu",
+        "Định mức tồn tối thiểu",
+        "Vị trí kệ",
+        "Đơn vị tính",
+        "Định mức tồn tối đa",
+        "Ghi chú",
+        "Giá vốn"
+      ],
+      "So_chi_tiet_ban_hang_1": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ],
+      "So_chi_tiet_ban_hang_2": [
+        "Ngày",
+        "Mã đơn hàng",
+        "Tên hàng hóa",
+        "Đơn vị tính",
+        "Số lượng",
+        "Đơn giá",
+        "Thành tiền",
+        "Trạng thái",
+        "Số lượng quy đổi"
+      ]
+    },
+    "semantic": {
+      "revenue": {
+        "file": "So_chi_tiet_ban_hang_1",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền",
+        "status_col": "Trạng thái",
+        "cancelled_values": [
+          "huỷ",
+          "hủy"
+        ]
+      },
+      "import": {
+        "file": "So_chi_tiet_ban_hang_2",
+        "date_col": "Ngày",
+        "money_col": "Thành tiền"
+      },
+      "inventory": {
+        "file": "Danh_sách_hàng_hóa.json",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Định mức tồn tối đa"
+      },
+      "product": {
+        "file": "Danh_sách_hàng_hóa.json",
+        "name_col": "Tên hàng hóa",
+        "sku_col": "Mã hàng hóa",
+        "price_col": "Giá vốn"
+      },
+      "customer": {
+        "file": "Danh_sách_hàng_hóa.json",
+        "name_col": "Tên khách hàng",
+        "id_col": "Mã khách hàng"
+      },
+      "order_detail": {
+        "file": "So_chi_tiet_ban_hang_1",
+        "order_id_col": "Mã đơn hàng",
+        "product_col": "Tên hàng hóa",
+        "qty_col": "Số lượng",
+        "money_col": "Thành tiền"
+      }
+    }
+  }
+}

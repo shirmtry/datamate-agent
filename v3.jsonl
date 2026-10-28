@@ -1,0 +1,100 @@
+{"id": "q_008fdebb6ec9", "type": "string", "answer": "Trà đào cam sả (M)"}
+{"id": "q_009187cd2960", "type": "number", "answer": 44}
+{"id": "q_00bf8df3ea0b", "type": "number", "answer": 1692992}
+{"id": "q_00c4e24fa228", "type": "number", "answer": 1498}
+{"id": "q_013b4ff35811", "type": "number", "answer": 7116405.3}
+{"id": "q_014cdcc1da6e", "type": "unanswerable", "reason": "Không có dữ liệu bán ca chiều ngày 26/8/2026"}
+{"id": "q_01ac0fc9f2a2", "type": "number", "answer": 70879}
+{"id": "q_01ba91ff94c6", "type": "list", "answer": ["Lẩu Thái tôm cá (nhỏ)", "Canh chua cá lóc", "Bia Tiger lon", "Rau muống xào tỏi", "Phí phục vụ"]}
+{"id": "q_01d1099489a0", "type": "percent", "answer": -13.04}
+{"id": "q_01d1fc600b26", "type": "number", "answer": 3142000}
+{"id": "q_027f5441831d", "type": "number", "answer": 0}
+{"id": "q_02feb595d6b7", "type": "number", "answer": 70}
+{"id": "q_0329c9711c55", "type": "number", "answer": 30}
+{"id": "q_033e37dde4d5", "type": "abstain"}
+{"id": "q_03622bae312b", "type": "percent", "answer": 6.9}
+{"id": "q_037178b58fcc", "type": "number", "answer": 6134}
+{"id": "q_0389b0c41da6", "type": "abstain"}
+{"id": "q_03bbdfa6e0d5", "type": "number", "answer": 55}
+{"id": "q_03bee605bf7f", "type": "number", "answer": 156072400}
+{"id": "q_040d437fdf09", "type": "number", "answer": 0}
+{"id": "q_049f0a34efdc", "type": "abstain"}
+{"id": "q_04e55a8f8c0c", "type": "unanswerable", "reason": "Không có đơn hàng hợp lệ trong tháng 6/2025"}
+{"id": "q_052834325528", "type": "abstain"}
+{"id": "q_0537f6e4f5ab", "type": "string", "answer": "{'doanh_thu': {'3/25': 273997500.0, '4/25': 253600200.0, '5/25': 281468600.0}, 'thang_ban_nhieu_nhat': '5/25', 'so_tien': 281468600.0}"}
+{"id": "q_05421814d0e3", "type": "number", "answer": 66810100}
+{"id": "q_0594583b3d46", "type": "number", "answer": 78367}
+{"id": "q_05ab1c71dcaa", "type": "list", "answer": ["khách lẻ"]}
+{"id": "q_05cde771f4c3", "type": "number", "answer": 125710.12352941177}
+{"id": "q_0641a621b596", "type": "abstain"}
+{"id": "q_06b7f437fcc4", "type": "unanswerable", "reason": "Không tìm thấy dữ liệu làm việc của thợ Đàm Lan An trong tháng này"}
+{"id": "q_06de4545fe25", "type": "number", "answer": 11}
+{"id": "q_06dfe652d857", "type": "number", "answer": 54418870}
+{"id": "q_07b7be37628b", "type": "percent", "answer": -29.5}
+{"id": "q_07ceefc30333", "type": "string", "answer": "Cà phê sữa (M)"}
+{"id": "q_07e2508ad671", "type": "number", "answer": 7}
+{"id": "q_0878814b6a76", "type": "abstain"}
+{"id": "q_08b923f3c5c5", "type": "string", "answer": "Cty Hà Sơn"}
+{"id": "q_08c521dda3d9", "type": "number", "answer": 940275168.5}
+{"id": "q_08f075b54698", "type": "number", "answer": 14794}
+{"id": "q_09542f67d04a", "type": "number", "answer": 67725.19}
+{"id": "q_099a18d1ed60", "type": "unanswerable", "reason": "Không tìm thấy dữ liệu bán hàng 'Nho' trong tháng 8/2025"}
+{"id": "q_09e3efc66c68", "type": "number", "answer": 169866.38503319252}
+{"id": "q_0a3308eb76bb", "type": "number", "answer": 10}
+{"id": "q_0a9819711554", "type": "abstain"}
+{"id": "q_0ac818a0f5f2", "type": "number", "answer": 2.2}
+{"id": "q_0acdf488056e", "type": "percent", "answer": -4.0}
+{"id": "q_0ae9b7cf7003", "type": "number", "answer": 0}
+{"id": "q_0b0081426a17", "type": "number", "answer": 668000}
+{"id": "q_0b78b53675c1", "type": "abstain"}
+{"id": "q_0b854610073b", "type": "number", "answer": 2851}
+{"id": "q_0bac8c88238d", "type": "number", "answer": 5068500}
+{"id": "q_0bee4ad8f965", "type": "number", "answer": 1874.3174999999999}
+{"id": "q_0c0a1a780164", "type": "unanswerable", "reason": "Không tìm thấy đơn thanh toán bằng ví điện tử trong tháng"}
+{"id": "q_0c62d2078959", "type": "number", "answer": 31}
+{"id": "q_0ca19cd317cb", "type": "abstain"}
+{"id": "q_0cb6a1a6f1ef", "type": "string", "answer": "kl"}
+{"id": "q_0d23cc65cc7a", "type": "percent", "answer": -100}
+{"id": "q_0da15db21978", "type": "percent", "answer": 3.32}
+{"id": "q_0dff1966b7c3", "type": "number", "answer": 52201.005025125625}
+{"id": "q_0e1eff36bbc5", "type": "percent", "answer": 55.33}
+{"id": "q_0e72ff8aa98e", "type": "number", "answer": 0}
+{"id": "q_0ea6fdb19b86", "type": "percent", "answer": -47.42}
+{"id": "q_0ed1ebc4fe4d", "type": "number", "answer": 160}
+{"id": "q_0ef1608808dd", "type": "number", "answer": 199941.3}
+{"id": "q_0ef28ee17f12", "type": "number", "answer": 219}
+{"id": "q_0f59f61affd1", "type": "number", "answer": 4947}
+{"id": "q_0f7d15097a8c", "type": "number", "answer": 4769}
+{"id": "q_1019063a351e", "type": "unanswerable", "reason": "Không tìm thấy dữ liệu thu máy cũ của khách 02/2026"}
+{"id": "q_101a2b744e56", "type": "number", "answer": 0}
+{"id": "q_101e84f9b702", "type": "number", "answer": 54039429}
+{"id": "q_102720daf6a9", "type": "number", "answer": 107733}
+{"id": "q_1040545087b6", "type": "number", "answer": 55500000}
+{"id": "q_105bc863feea", "type": "number", "answer": 142565300}
+{"id": "q_107e86e608dc", "type": "number", "answer": 7336900}
+{"id": "q_10831a6f3a2b", "type": "number", "answer": 1015}
+{"id": "q_10a0c4fec3d2", "type": "boolean", "answer": false}
+{"id": "q_113d86c3eb6a", "type": "abstain"}
+{"id": "q_11c915f78c7e", "type": "number", "answer": 518}
+{"id": "q_1205eaa6091a", "type": "percent", "answer": 20.98}
+{"id": "q_121c6959016d", "type": "number", "answer": 16}
+{"id": "q_12712b3cc328", "type": "number", "answer": 7}
+{"id": "q_128fd07d838e", "type": "number", "answer": 15}
+{"id": "q_129b29f14e89", "type": "number", "answer": 118588.3}
+{"id": "q_12d78074f059", "type": "number", "answer": 72560.39}
+{"id": "q_1341cdede99a", "type": "number", "answer": 0}
+{"id": "q_14565ad8b459", "type": "number", "answer": 19929.5}
+{"id": "q_1473ee8c46fd", "type": "percent", "answer": -9.77}
+{"id": "q_14a10f251fd0", "type": "unanswerable", "reason": "Không có dữ liệu bán sữa bột số 2 trong tháng 3/2026"}
+{"id": "q_15711c61bb0d", "type": "unanswerable", "reason": "Dữ liệu không có thông tin đánh giá/điểm thân thiện của nhân viên. Các bảng chỉ chứa thông tin bán hàng (doanh thu, số lượng, khách, nhân viên bán) nhưng không có trường đo mức độ thân thiện/phản hồi khách hàng, nên không thể xác định nhân viên phục vụ thân thiện nhất."}
+{"id": "q_15a8893ff6f9", "type": "unanswerable", "reason": "Không tìm thấy dòng hàng nào liên quan đến 'đĩa' trong tuần trước"}
+{"id": "q_15dd37187b0d", "type": "percent", "answer": 63.25}
+{"id": "q_1602cfcc7d42", "type": "number", "answer": 1189}
+{"id": "q_1618b7c50ae7", "type": "percent", "answer": 69.73}
+{"id": "q_162c076a350d", "type": "number", "answer": 192190.5}
+{"id": "q_16852a1ac5f7", "type": "number", "answer": 42}
+{"id": "q_169a123623e6", "type": "percent", "answer": 8.62}
+{"id": "q_169bfdcce0ae", "type": "abstain"}
+{"id": "q_16e72d67a5f4", "type": "number", "answer": 655015003}
+{"id": "q_16ec75d6c8a4", "type": "number", "answer": 11101}
+{"id": "q_16fc554b8db0", "type": "unanswerable", "reason": "Không có dữ liệu đơn hàng trong tháng 7/2026 ca sáng"}

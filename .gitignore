@@ -1,0 +1,20 @@
+# Bỏ qua môi trường ảo
+venv/
+env/
+__pycache__/
+
+# Bỏ qua file log và kết quả chạy (nếu bạn không muốn up)
+log_test/
+logs_daily/
+*.log
+*.txt
+!requirements.txt
+
+# BỎ QUA CÁC FILE CHỨA API KEY (CỰC KỲ QUAN TRỌNG)
+*.env
+config.json
+*_key.py
+
+# Bỏ qua các file rác của hệ điều hành
+.DS_Store
+Thumbs.db

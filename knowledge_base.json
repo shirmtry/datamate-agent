@@ -1,0 +1,27 @@
+[
+  {
+    "question": "tỉ lệ huỷ đơn tháng 6/2025 là nhiêu %",
+    "code": "# Giả sử dfs là dict chứa tất cả các DataFrame đã được load trước đó\n# 1. Lấy bảng bán hàng tháng 06/2025\ndf = get_df_by_keyword(dfs, ['SoBanHang_1_Thang 06 2025'])\n\n# 2. Kiểm tra rỗng\nif df is None or len(df) == 0:\n    ans = None\nelse:\n    # 3. Xử lý ngày giao dịch\n    df['Ngày giao dịch'] = parse_date_safe(df['Ngày giao dịch'])\n\n    # 4. Đếm tổng số đơn (dùng cột \"Mã hóa đơn\")\n    total_orders = df['Mã hóa đơn'].nunique()\n\n    # 5. Đếm số đơn hủy (cột \"Status\")\n    cancelled_mask = df['Status'].astype(str).str.lower().str.contains(r'hủy|huỷ|cancel', na=False)\n    cancelled_orders = df.loc[cancelled_mask, 'Mã hóa đơn'].nunique()\n\n    # 6. Tính tỉ lệ hủy (%)\n    if total_orders == 0:\n        ans = 0.0\n    else:\n        ans = round(cancelled_orders / total_orders * 100, 2)",
+    "answer": 2.08
+  },
+  {
+    "question": "đếm số đơn đã huỷ trong tháng 12/2025",
+    "code": "# Lấy bảng chi tiết đơn hàng\ndf = get_df_by_keyword(dfs, ['DonHang_ChiTiet'])\n\n# Kiểm tra bảng có dữ liệu hay không\nif df is None or len(df) == 0:\n    ans = None\nelse:\n    # Chuyển đổi cột ngày sang kiểu datetime an toàn\n    df['Ngày đặt hàng'] = parse_date_safe(df['Ngày đặt hàng'])\n\n    # Lọc các đơn hàng trong tháng 12/2025\n    df_dec_2025 = df[\n        (df['Ngày đặt hàng'].dt.year == 2025) &\n        (df['Ngày đặt hàng'].dt.month == 12)\n    ]\n\n    # Lọc các đơn hàng có trạng thái là hủy (các từ khóa: hủy, huỷ, cancel)\n    df_cancel = df_dec_2025[\n        df_dec_2025['Trạng thái đơn hàng']\n        .astype(str)\n        .str.lower()\n        .str.contains('hủy|huỷ|cancel', na=False)\n    ]\n\n    # Đếm số đơn hàng hủy duy nhất\n    ans = df_cancel['Mã đơn hàng'].nunique()",
+    "answer": 64
+  },
+  {
+    "question": "thang 9/2025 cua hang co bnhiu % don bi huy",
+    "code": "# Lấy bảng chi tiết đơn hàng\ndf = get_df_by_keyword(dfs, ['DonHang_ChiTiet'])\n\n# Kiểm tra rỗng\nif df is None or len(df) == 0:\n    ans = None\nelse:\n    # Xử lý ngày đặt hàng\n    df['Ngày đặt hàng'] = parse_date_safe(df['Ngày đặt hàng'])\n    \n    # Lọc dữ liệu tháng 9/2025\n    df_month = df[\n        (df['Ngày đặt hàng'].dt.year == 2025) &\n        (df['Ngày đặt hàng'].dt.month == 9)\n    ]\n    \n    # Tổng số đơn hàng (đếm mã đơn hàng duy nhất)\n    total_orders = df_month['Mã đơn hàng'].nunique()\n    \n    # Đếm số đơn hàng bị hủy\n    cancelled_orders = df_month[\n        df_month['Trạng thái đơn hàng']\n        .astype(str)\n        .str.lower()\n        .str.contains('hủy|huỷ|cancel', na=False)\n    ]['Mã đơn hàng'].nunique()\n    \n    # Tính % đơn bị hủy (tránh chia cho 0)\n    if total_orders == 0:\n        ans = 0.0\n    else:\n        ans = round(cancelled_orders / total_orders * 100, 2)",
+    "answer": 1.66
+  },
+  {
+    "question": "Ngày 14/07/2025 cửa hàng bán Cà phê muối (L) với đơn giá bao nhiêu một ly?",
+    "code": "# Lấy bảng chi tiết đơn hàng\ndf = get_df_by_keyword(dfs, ['DonHang_ChiTiet'])\nif df is None or len(df) == 0:\n    ans = None\nelse:\n    # Xử lý ngày và tiền\n    df['Ngày đặt hàng'] = parse_date_safe(df['Ngày đặt hàng'])\n    df['Giá sản phẩm'] = clean_money(df['Giá sản phẩm'])\n\n    # Lọc theo ngày 14/07/2025 và tên sản phẩm \"Cà phê muối (L)\"\n    target_date = pd.Timestamp('2025-07-14')\n    mask = (\n        (df['Tên sản phẩm'] == 'Cà phê muối (L)') &\n        (df['Ngày đặt hàng'] == target_date)\n    )\n    df_filtered = df[mask]\n\n    # Kiểm tra kết quả\n    if df_filtered.empty:\n        ans = None\n    else:\n        # Lấy giá đơn vị (giá sản phẩm) – nếu có nhiều giá khác nhau, trả về danh sách duy nhất\n        unique_prices = df_filtered['Giá sản phẩm'].unique()\n        ans = unique_prices[0] if len(unique_prices) == 1 else unique_prices.tolist()",
+    "answer": 41000
+  },
+  {
+    "question": "tháng 5/2026 cửa hàng có nhiêu % đơn bị huỷ",
+    "code": "# 1. Lấy bảng chi tiết bán hàng tháng 5/2026\ndf = get_df_by_keyword(dfs, ['So_chi_tiet_ban_hang_1_T05_2026'])\n\n# 2. Kiểm tra rỗng\nif df is None or len(df) == 0:\n    ans = None\nelse:\n    # 3. Xử lý ngày và tiền (đảm bảo định dạng chuẩn)\n    df['Ngày'] = parse_date_safe(df['Ngày'])\n    df['Thành tiền'] = clean_money(df['Thành tiền'])\n\n    # 4. Đếm tổng số đơn hàng (unique Mã đơn hàng)\n    total_orders = df['Mã đơn hàng'].nunique()\n\n    # 5. Đếm số đơn hàng bị hủy\n    cancelled_mask = df['Trạng thái'].astype(str).str.lower().str.contains(\n        r'hủy|huỷ|cancel', na=False\n    )\n    cancelled_orders = df.loc[cancelled_mask, 'Mã đơn hàng'].nunique()\n\n    # 6. Tính % đơn bị hủy (tròn 2 chữ số)\n    if total_orders == 0:\n        ans = None\n    else:\n        ans = round(cancelled_orders / total_orders * 100, 2)",
+    "answer": 2.19
+  }
+]
