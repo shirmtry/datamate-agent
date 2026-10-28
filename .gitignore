@@ -18,3 +18,11 @@ config.json
 # Bỏ qua các file rác của hệ điều hành
 .DS_Store
 Thumbs.db
+# Chặn tất cả file code ở thư mục gốc
+/*.py
+/*.txt
+/*.md
+/*.jsonl
+/*.json
+/*.cmd
+/*.ps1
